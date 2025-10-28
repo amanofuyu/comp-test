@@ -79,7 +79,7 @@ useSeoMeta({
       Nounenrena's Blog Archive
     </h1>
 
-    <div class="w-full max-w-screen-md mx-auto py-16 md:py-20">
+    <div class="w-full max-w-3xl mx-auto py-16 md:py-20">
       <main class="mb-10 flex flex-col gap-8">
         <section>
           <h2 class="text-xl font-bold mb-4">

@@ -1,3 +1,7 @@
-packages:
-  - "apps/*"
-  - "packages/*"
+ignoreWorkspaceRootCheck: true
+
+packageManagerStrict: false
+
+shellEmulator: true
+
+verifyDepsBeforeRun: install

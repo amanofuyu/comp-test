@@ -77,7 +77,7 @@ useSeoMeta({
       Nounenrena's Blog Archive for {{ year }}
     </h1>
 
-    <div class="fixed top-1/2 left-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 pointer-events-none w-full max-w-screen-md" aria-hidden="true">
+    <div class="fixed top-1/2 left-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 pointer-events-none w-full max-w-3xl" aria-hidden="true">
       <svg class="w-full h-auto" viewBox="0 0 100 100">
         <text
           x="50" y="50"
@@ -94,7 +94,7 @@ useSeoMeta({
       </svg>
     </div>
 
-    <div class="w-full max-w-screen-md mx-auto py-16 md:py-20">
+    <div class="w-full max-w-3xl mx-auto py-16 md:py-20">
       <h2 class="text-3xl font-bold mb-10">
         {{ `${year} · ${data!.listTotal} of ${data!.total}` }}
       </h2>

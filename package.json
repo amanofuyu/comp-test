@@ -1,25 +1,53 @@
 {
-  "name": "non.fan",
+  "name": "web",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.17.1",
+  "packageManager": "pnpm@10.19.0",
+  "main": "./nuxt.config.ts",
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
+    "build": "nuxt build",
+    "dev": "nuxt dev --host",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "check": "taze major -r",
-    "tup": "taze major -r -I",
-    "postinstall": "npx simple-git-hooks"
+    "tup": "taze major -r -I"
+  },
+  "dependencies": {
+    "@ark-ui/vue": "^5.26.2",
+    "animejs": "^4.2.2",
+    "browser-fs-access": "^0.38.0",
+    "es-toolkit": "^1.41.0",
+    "file-saver": "^2.0.5",
+    "hast-util-from-html": "^2.0.3",
+    "modern-gif": "^2.0.4",
+    "nuxt": "^4.2.0",
+    "vue": "^3.5.22"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^5.4.1",
-    "eslint": "^9.36.0",
+    "@antfu/eslint-config": "^6.1.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.1.16",
+    "@types/file-saver": "^2.0.7",
+    "@types/wicg-file-system-access": "^2023.10.7",
+    "@vueuse/core": "^14.0.0",
+    "@vueuse/nuxt": "^14.0.0",
+    "cross-env": "^10.1.0",
+    "dayjs-nuxt": "2.1.11",
+    "eslint": "^9.38.0",
     "eslint-plugin-format": "^1.0.2",
-    "lint-staged": "^16.2.3",
+    "lint-staged": "^16.2.6",
     "simple-git-hooks": "^2.13.1",
-    "taze": "^19.7.0",
+    "tailwindcss": "^4.1.16",
+    "taze": "^19.8.1",
     "tsx": "^4.20.6",
-    "turbo": "^2.5.8"
+    "typescript": "^5.9.3",
+    "vueuc": "^0.4.65"
+  },
+  "resolutions": {
+    "vue": "^3.5.22"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"

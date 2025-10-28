@@ -296,7 +296,7 @@ onMounted(() => {
 
 <template>
   <main class="w-full h-dvh flex flex-col items-center justify-center relative z-10">
-    <div ref="signRef" class="absolute -z-10 aspect-[3/2] text-white pointer-events-none [6>svg]:w-full [6>svg]:h-full" :style="{ width: signWidth, height: signHeight }">
+    <div ref="signRef" class="absolute -z-10 aspect-3/2 text-white pointer-events-none [6>svg]:w-full [6>svg]:h-full" :style="{ width: signWidth, height: signHeight }">
       <svg viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M37 93C37.5 89 40.5 78 46 78C52.5 78 53 88.5 56 91.5C58.2986 92.9366 72 81.3689 82 73.5C112.5 49.5 134 31 130.5 28.5C122.5 28 107.5 48 106.5 56C106.25 58 106.5 62 111.5 64C116.5 66 122.5 61.5 124 60C125.5 58.5 135 48.6 131 47C129.5 46.4 123.833 50 122.5 54C121.5 58.5 127 56.5833 130.5 56C135.5 55.5 156.5 42.5 158 42C159.5 41.5 153.5 51 155.5 52C158.5 52.5 178 39 181 39C184 39 187.5 46 190.5 46.5C194.486 47.1643 202 44.5 209 39.5C216 34.5 224.5 26.5 229.5 22"
@@ -335,7 +335,7 @@ onMounted(() => {
       </svg>
     </div>
 
-    <div class="absolute bottom-5 w-full max-w-screen-md flex items-center justify-end gap-4">
+    <div class="absolute bottom-5 w-full max-w-3xl flex items-center justify-end gap-4">
       <button class="cursor-pointer" @click="generateSignImage">
         生成图片{{ isGeneratingImage ? '中...' : '' }}
       </button>

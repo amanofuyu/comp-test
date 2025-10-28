@@ -5,7 +5,7 @@ export default antfu(
     formatters: true,
   },
   {
-    ignores: ['**/public/**/*'],
+    ignores: ['**/public/**'],
   },
   {
     rules: {
