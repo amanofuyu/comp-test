@@ -51,8 +51,13 @@
     "less",
     "scss",
     "pcss",
-    "postcss"
+    "postcss",
+    "tailwindcss"
   ],
+
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
 
   "tailwindCSS.classFunctions": ["cva", "cx"],
 
